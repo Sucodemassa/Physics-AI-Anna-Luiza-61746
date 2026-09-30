@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 8598055769166575283}
   - component: {fileID: 8980148732523715060}
   - component: {fileID: 7243781515865155749}
-  - component: {fileID: 5809411577393189202}
   - component: {fileID: 7465732518751720014}
-  - component: {fileID: 7115568215708140085}
   - component: {fileID: 1952777529333271774}
   - component: {fileID: 1115562618213540922}
+  - component: {fileID: 3482492933635861349}
   m_Layer: 0
-  m_Name: Shell 1
+  m_Name: AIShell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,19 +94,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5809411577393189202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2238682819870318598}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13730d0aa2a47e64f8c52b809268ddf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoveShell
-  speed: 3
 --- !u!136 &7465732518751720014
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -131,20 +117,6 @@ CapsuleCollider:
   m_Height: 0.62
   m_Direction: 2
   m_Center: {x: 0, y: 0.000000007450581, z: 0.14}
---- !u!114 &7115568215708140085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2238682819870318598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a460c8290e014c3caa73ba461ac9a10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Shell
-  explosion: {fileID: 195792, guid: 89e78efe92dfe5a42837b392cdb0bf9e, type: 3}
-  speed: 1
 --- !u!114 &1952777529333271774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +151,21 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3482492933635861349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2238682819870318598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faadd674c21822f44a53fb3633d54d80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AIShell
+  explosion: {fileID: 195792, guid: 89e78efe92dfe5a42837b392cdb0bf9e, type: 3}

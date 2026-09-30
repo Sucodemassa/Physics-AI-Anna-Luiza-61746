@@ -500,6 +500,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!4 &1764877444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6880403096463785013, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+  m_PrefabInstance: {fileID: 1354003426666338538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1917366433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -657,6 +662,14 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 187886069}
+    - target: {fileID: 3395265712836071421, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2238682819870318598, guid: b7f40e05fca0792489544e5e17ca75d7, type: 3}
+    - target: {fileID: 3395265712836071421, guid: e57a33c6f3b0e4cb2a2af014c265b239, type: 3}
+      propertyPath: turretBase
+      value: 
+      objectReference: {fileID: 1764877444}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
