@@ -1,7 +1,6 @@
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
-
-// A very simplistic car driving on the x-z plane.
 
 public class Drive : MonoBehaviour
 {
